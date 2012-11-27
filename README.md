@@ -3,6 +3,37 @@ Library
 
 CSU East Bay Database Architecture (CS 4660) course web database project using MySQL and PHP.
 
+Database Schema
+===============
+
+Read as follow :<br/>
+> _Primary key_ <br/>
+> "Foreign keys"
+    
+<table>
+<tr><td colspan="2"><strong>Branches</strong></td></tr>
+<tr><td><em>BranchName</em></td><td>City</td></tr>
+</table>
+
+<table>
+<tr><td colspan="2"><strong>Cardholders</strong></td></tr>
+<tr><td><em>CardholderName</em></td><td>City</td></tr>
+</table>
+
+<table>
+<tr><td colspan="2"><strong>Categories</strong></td></tr>
+<tr><td><em>CategoryName</em></td><td>Expert</td></tr>
+</table>
+
+<table>
+<tr><td colspan="5"><strong>Books</strong></td></tr>
+<tr><td><em>Title</em></td><td><em>Copy</em></td><td>"Branch"</td><td>"Cardholder"</td><td>"Category"</td></tr>
+</table>
+
+<table>
+<tr><td colspan="5"><strong>Dvds</strong></td></tr>
+<tr><td><em>Title</em></td><td><em>Copy</em></td><td>"Branch"</td><td>"Cardholder"</td><td>"Category"</td></tr>
+</table>
 
 SQL queries
 ===========
