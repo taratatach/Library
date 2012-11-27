@@ -67,7 +67,7 @@ AND books.title = b1.title
 AND b1.branch = "Bayfair"
 ```
 
-_sub-subquery_
+_sub-subquery with aggregates_
 ```sql
 SELECT DISTINCT b1.branch, (
 
