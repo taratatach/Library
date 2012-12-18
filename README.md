@@ -35,6 +35,22 @@ Read as follow :<br/>
 <tr><td><em>Title</em></td><td><em>Copy</em></td><td>"Branch"</td><td>"Cardholder"</td><td>"Category"</td></tr>
 </table>
 
+## SQL query to create the "books"  table
+
+```sql
+CREATE TABLE IF NOT EXISTS `books` (
+  `Title` varchar(80) NOT NULL DEFAULT '',
+  `Copy` int(11) NOT NULL DEFAULT '1',
+  `Branch` varchar(80) DEFAULT NULL,
+  `Cardholder` varchar(80) DEFAULT NULL,
+  `Category` varchar(80) DEFAULT NULL,
+  PRIMARY KEY (`Title`,`Copy`),
+  KEY `Branch` (`Branch`),
+  KEY `Cardholder` (`Cardholder`),
+  KEY `Category` (`Category`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+```
+
 SQL queries
 ===========
 
